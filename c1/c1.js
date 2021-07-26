@@ -35,9 +35,44 @@ let hotel6 = {
     price: 67.5,
     distance: 92
 };
+let hotel7 = {
+    name: "Hotel Emeritus",
+    price: 10,
+    distance: 2
+};
+
+let hotel8 = {
+    name: "Duplix Hotels",
+    price: 40.5,
+    distance: 7.5
+};
+
+let hotel9 = {
+    name: "Brix Hotels",
+    price: 10,
+    distance: 22
+};
+
+let hotel10 = {
+    name: "Hotel Mobxx",
+    price: 91.9,
+    distance: 0.2
+};
+
+let hotel11 = {
+    name: "Hotel De La Mot",
+    price: 22,
+    distance: 6
+};
+
+let hotel12 = {
+    name: "Muet Hotels",
+    price: 61.5,
+    distance: 3
+};
 
 // Create hotel arrays
-let hotels = [hotel1, hotel2, hotel3, hotel4, hotel5, hotel6];
+let hotels = [hotel1, hotel2, hotel3, hotel4, hotel5, hotel6, hotel7, hotel8, hotel9, hotel10, hotel11, hotel12];
 
 // create results variable
 let result = "List of available hotels:";
@@ -50,7 +85,7 @@ for (let x = 0; x < hotels.length; x++) {
     distance from city center: ${hotels[x].distance}miles.
     `
 }
-console.log(result);
+// console.log(result);
 
 let budget = prompt(`Please enter your budget`);
 budget = parseFloat(budget);
@@ -61,6 +96,8 @@ distance = parseFloat(distance);
 // reset result
 result = "";
 
+let Hn = 0;
+
 for (let x = 0; x < hotels.length; x++) {
     if(hotels[x].price <= budget && hotels[x].distance <= distance){
         result += ` 
@@ -69,5 +106,24 @@ for (let x = 0; x < hotels.length; x++) {
         price per night: $${hotels[x].price}, 
         distance from city center: ${hotels[x].distance}miles.
         `
+        Hn++;
     }
 }
+console.log(Hn);
+
+if (result) {
+    result = 
+    `
+    Your search returned the following results;
+
+    ${result}
+    `
+} else {
+
+    result = 
+    `
+    We're sorry, your search did not return any result.
+    `
+}
+
+console.log(result);
