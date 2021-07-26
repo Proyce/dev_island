@@ -86,6 +86,7 @@ for (let x = 0; x < hotels.length; x++) {
     `
 }
 
+// enter budget
 let budget = prompt(`Please enter your budget`);
 budget = parseFloat(budget);
 
