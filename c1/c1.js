@@ -109,20 +109,24 @@ for (let x = 0; x < hotels.length; x++) {
         Hn++;
     }
 }
-console.log(Hn);
+// console.log(Hn);
 
-if (result) {
+if (result && Hn > 1) {
     result = 
     `
-    Your search returned the following results;
+    Your search returned ${Hn} results;
 
     ${result}
     `
-} else {
+} else if(result && Hn === 1) {
 
     result = 
     `
-    We're sorry, your search did not return any result.
+    Your search returned 1 result.
+    `
+} else {
+    `
+    Your search did not return any results.
     `
 }
 
