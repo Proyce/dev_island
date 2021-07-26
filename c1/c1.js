@@ -90,6 +90,7 @@ for (let x = 0; x < hotels.length; x++) {
 let budget = prompt(`Please enter your budget`);
 budget = parseFloat(budget);
 
+// enter distance
 let distance = prompt(`Please enter your distance in miles`);
 distance = parseFloat(distance);
 
