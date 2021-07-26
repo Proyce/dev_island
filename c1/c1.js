@@ -96,7 +96,7 @@ distance = parseFloat(distance);
 // reset result
 result = "";
 
-let Hn = 0;
+let hotelCount = 0;
 
 for (let x = 0; x < hotels.length; x++) {
     if(hotels[x].price <= budget && hotels[x].distance <= distance){
@@ -106,27 +106,30 @@ for (let x = 0; x < hotels.length; x++) {
         price per night: $${hotels[x].price}, 
         distance from city center: ${hotels[x].distance}miles.
         `
-        Hn++;
+        hotelCount++;
     }
 }
-// console.log(Hn);
+// console.log(hotelCount);
 
-if (result && Hn > 1) {
+if (result && hotelCount > 1) {
     result = 
     `
-    Your search returned ${Hn} results;
+    Your search returned ${hotelCount} results;
 
     ${result}
     `
-} else if(result && Hn === 1) {
+} else if(result && hotelCount === 1) {
 
     result = 
     `
     Your search returned 1 result.
+
+    ${result}
     `
 } else {
+   result = 
     `
-    Your search did not return any results.
+   Sorry, your search did not return any results.
     `
 }
 
