@@ -119,7 +119,6 @@ if (hotelCount > 1) {
     ${result}
     `
 } else if(hotelCount === 1) {
-
     result = 
     `
     Your search returned 1 result.
