@@ -112,6 +112,7 @@ for (let x = 0; x < hotels.length; x++) {
     }
 }
 
+// display search results
 if (hotelCount > 1) {
     result = 
     `
