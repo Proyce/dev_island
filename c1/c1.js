@@ -109,7 +109,6 @@ for (let x = 0; x < hotels.length; x++) {
         hotelCount++;
     }
 }
-// console.log(hotelCount);
 
 if (hotelCount > 1) {
     result = 
