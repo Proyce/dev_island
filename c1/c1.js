@@ -85,7 +85,6 @@ for (let x = 0; x < hotels.length; x++) {
     distance from city center: ${hotels[x].distance}miles.
     `
 }
-// console.log(result);
 
 let budget = prompt(`Please enter your budget`);
 budget = parseFloat(budget);
