@@ -111,14 +111,14 @@ for (let x = 0; x < hotels.length; x++) {
 }
 // console.log(hotelCount);
 
-if (result && hotelCount > 1) {
+if (hotelCount > 1) {
     result = 
     `
     Your search returned ${hotelCount} results;
 
     ${result}
     `
-} else if(result && hotelCount === 1) {
+} else if(hotelCount === 1) {
 
     result = 
     `
@@ -134,3 +134,5 @@ if (result && hotelCount > 1) {
 }
 
 console.log(result);
+
+// C1 complete.
