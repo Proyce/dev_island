@@ -58,4 +58,16 @@ budget = parseFloat(budget);
 let distance = prompt(`Please enter your distance in miles`);
 distance = parseFloat(distance);
 
+// reset result
 result = "";
+
+for (let x = 0; x < hotels.length; x++) {
+    if(hotels[x].price <= budget && hotels[x].distance <= distance){
+        result += ` 
+        Name of hotel: 
+        ${hotels[x].name}, 
+        price per night: $${hotels[x].price}, 
+        distance from city center: ${hotels[x].distance}miles.
+        `
+    }
+}
