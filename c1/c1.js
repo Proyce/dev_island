@@ -97,6 +97,7 @@ distance = parseFloat(distance);
 // reset result
 result = "";
 
+// initialize hotel count
 let hotelCount = 0;
 
 for (let x = 0; x < hotels.length; x++) {
