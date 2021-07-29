@@ -135,4 +135,6 @@ if (hotelCount > 1) {
 }
 
 console.log(result);
+
+
 // C1 complete.
