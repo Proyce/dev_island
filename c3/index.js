@@ -10,6 +10,7 @@
 var scoops = 8;
 while (scoops > 0) {
 document.write("Another scoop!<br>");
-scoops = scoops - 1;
+// scoops = scoops - 1;
+scoops--;
 }
 document.write("Life without ice cream isn't the same");
