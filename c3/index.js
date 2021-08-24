@@ -7,10 +7,22 @@
 //   }
 //   console.log(company);
 
-var scoops = 8;
-while (scoops > 0) {
-document.write("Another scoop!<br>");
-// scoops = scoops - 1;
-scoops--;
-}
-document.write("Life without ice cream isn't the same");
+
+// //While loop.
+// let scoops = 5;
+// while (scoops > 0) {
+// document.write("Another scoop!<br>");
+// // scoops = scoops - 1;
+// scoops--;
+// // scoops++;
+// }
+// document.write("Life without ice cream isn't the same");
+
+var  myName = "Joe";
+var i = 0;
+while (i < 2) {
+    document.write("Happy Birthday to you.<br>");
+    i = i + 1;
+    }
+document.write("Happy Birthday dear " +  myName + ",<br>");
+document.write("Happy Birthday to you.<br>");
