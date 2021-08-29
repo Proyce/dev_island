@@ -26,3 +26,5 @@ while (i < 2) {
     }
 document.write("Happy Birthday dear " +  myName + ",<br>");
 document.write("Happy Birthday to you.<br>");
+
+//Paused for now.
